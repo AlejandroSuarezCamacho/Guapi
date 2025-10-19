@@ -1,0 +1,107 @@
+codigo no usado
+
+/* .title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.title h2{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.title h2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2.5px;
+    background: linear-gradient(90deg, #2196F3, #00BCD4);
+    border-radius: 2px;
+} */
+
+
+/* .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;  
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    color: #fff;
+    transition: background 0.4s ease, opacity 0.4s ease;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-location {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2));
+} */
+
+html:
+ <!-- <div class="cards">
+                    <div class="cards-content">
+                        <img src="img/cards-attractions/Thedock.png">
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="cards-content">
+                        <img src="img/cards-attractions/Gorgona.png">
+                    </div>
+                </div>
+                
+                <div class="cards">
+                    <div class="cards-content">
+                        <img src="img/cards-attractions/Local.png">
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="cards-content">
+                        <img src="img/cards-attractions/Market.png">
+                    </div>
+                </div> -->
