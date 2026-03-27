@@ -13,9 +13,9 @@ window.addEventListener("scroll", () => {
 
 /* Scroll */
 const lenis = new Lenis({
-    duration: 1.3,      // velocidad (mayor = más lento)
-    smoothWheel: true,  // activa el scroll suave con rueda del ratón
-    smoothTouch: false, // puedes cambiar a true si quieres en móviles
+    duration: 1.3,      
+    smoothWheel: true,  
+    smoothTouch: false, 
 });
 
 // Bucle de animación
@@ -28,16 +28,15 @@ requestAnimationFrame(raf);
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
-        e.preventDefault(); // evita el salto instantáneo
+        e.preventDefault(); 
 
         const targetId = anchor.getAttribute('href');
         const target = document.querySelector(targetId);
 
         if (target) {
-            // Usa Lenis para hacer scroll suave hacia el destino
             lenis.scrollTo(target, {
-                offset: 0,       // ajusta si tienes navbar fija
-                immediate: false // true = salto directo
+                offset: 0,       
+                immediate: false 
             });
         }
     });
@@ -56,10 +55,8 @@ imageIds.forEach(id => {
     const img = document.getElementById(id);
     if (img) {
         img.addEventListener('click', function () {
-            // Obtener la URL de la imagen clickeada
             const imageSrc = img.src;
 
-            // Mostrar la imagen en el modal
             if (modalImage) {
                 modalImage.src = imageSrc;
             }
@@ -93,28 +90,24 @@ modal.addEventListener('click', function (e) {
     }
 });
 
-/* Parllaxa */
-
+/* Parllax */
 const heroContainer = document.querySelector('.hero-container');
 const heroTitle = document.querySelector('.hero-title');
 const heroText = document.querySelector('.hero-text');
 const scrollElement = document.querySelector('.scroll');
 
-// Altura del hero (generalmente 100vh)
+
 const heroHeight = window.innerHeight;
-// Píxeles a los que desaparece (puedes ajustar esto)
 const disappearAt = heroHeight * 0.8;
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
-    // Efecto parallax - movimiento más lento que el scroll
     const parallaxOffset = scrollY * 0.5;
     heroTitle.style.transform = `translateY(${parallaxOffset}px)`;
     heroText.style.transform = `translateY(${parallaxOffset}px)`;
     scrollElement.style.transform = `translateY(${parallaxOffset}px) rotate(270deg)`;
 
-    // Desaparición sin animación
     if (scrollY > disappearAt) {
         heroContainer.style.display = 'none';
     } else {
@@ -123,7 +116,6 @@ window.addEventListener('scroll', () => {
 });
 
 /* Hotel */
-
 const imageJS = document.getElementById('hotel');
 const originalSrc = imageJS.src;
 const hoverSrc = imageJS.dataset.hover;
@@ -137,7 +129,6 @@ imageJS.addEventListener('mouseleave', () => {
 });
 
 /* Restaurante 1 */
-
 const imageRest1 = document.getElementById('card-der2');
 const originalRest1 = imageJS.src;
 const hoverRest1 = imageJS.dataset.hover;
@@ -151,7 +142,6 @@ imageRest1.addEventListener('mouseleave', () => {
 });
 
 /* Restaurante 2 */
-
     const imageRest2 = document.getElementById('card-der3');
     const originalRest2 = imageJS.src;
     const hoverRest2 = imageJS.dataset.hover;
@@ -165,8 +155,7 @@ imageRest1.addEventListener('mouseleave', () => {
     });
 
 
-// carrusel (para nada hecho con ayuda de ia :D)
-
+// Carousel 
 let currentSlide = 0;
 let slides = [];
 let indicators = [];
